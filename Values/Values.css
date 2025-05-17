@@ -1,0 +1,162 @@
+/* Estilo base del body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #100c14;
+}
+
+/* Estilo del header */
+header {
+    background-color: #1a1d3b96;
+    height: 60px;
+    max-width: 85%;
+    margin: 20px auto 0 auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Estilo del nav */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Logo */
+#logo {
+    width: 55px;
+    height: 45px;
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+
+/* Menú */
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 40px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+#Contact {
+    margin-right: 30px;
+}
+
+.menu li a:hover {
+    color: #7824ff;
+}
+.valores-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    /* Gradiente radial: empieza con color oscuro en los bordes y claro en el centro */
+    background: radial-gradient(circle, #2c2f54 0%, #100c14 80%);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    color: #f0f0f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.valores-container h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+    color: #1b4fdf;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+fieldset p {
+    background-color: rgba(126, 87, 194, 0.15);
+    border-radius: 12px;
+    padding: 20px 25px;
+    box-shadow: 0 5px 15px rgba(126, 87, 194, 0.3);
+    font-size: 1.1rem;
+    line-height: 1.5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+fieldset p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(126, 87, 194, 0.6);
+}
+
+.values {
+    font-weight: 700;
+    color: #b39ddb;
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+    .valores-container h1 {
+        font-size: 2.2rem;
+    }
+    fieldset p {
+        font-size: 1rem;
+        padding: 15px 20px;
+    }
+}
+
+
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right {
+        text-align: center;
+    }
+
+    .left img {
+        margin-bottom: 20px;
+    }
+}
+
+.highlight {
+    color: #1e90ff; /* Azul brillante */
+    font-weight: bold; /* Opcional: para resaltarlo más */
+}
